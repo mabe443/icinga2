@@ -48,6 +48,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     php-gmp \
     procps \
     pwgen \
+    python \
     snmp \
     msmtp \
     sudo \
@@ -55,9 +56,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     unzip \
     wget \
     cron \
-    jq \
-    telnet \
-    python \
     && apt-get -y --purge remove exim4 exim4-base exim4-config exim4-daemon-light \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
